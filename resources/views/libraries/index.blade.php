@@ -11,7 +11,7 @@
         @endsession
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a class="btn btn-success btn-sm" href="{{ route('libraries.create') }}"> <i class="fa fa-plus"></i> Create New Product</a>
+            <a class="btn btn-success btn-sm" href="{{ route('libraries.create') }}"> <i class="fa fa-plus"></i> Dona un libro nuevo</a>
         </div>
 
         <table class="table table-bordered table-striped mt-4">
@@ -36,12 +36,12 @@
                     <td>
                         <form action="{{ route('libraries.destroy',$library->id) }}" method="POST">
             
-                            <a class="btn btn-primary btn-sm" href="{{ route('libraries.edit',$library->id) }}"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            <a class="btn btn-primary btn-sm" href="{{ route('libraries.edit',$library->id) }}"><i class="fa-solid fa-pen-to-square"></i> Editar</a>
            
                             @csrf
                             @method('DELETE')
               
-                            <button type="submit" class="btn btn-danger btn-sm" href="{{ route('libraries.destroy',$library->id) }}"><i class="fa-solid fa-trash"></i> Delete</button>
+                            <button type="submit" class="btn btn-danger btn-sm" href="{{ route('libraries.destroy',$library->id) }}"><i class="fa-solid fa-trash"></i> Borrar</button>
                         </form>
                     </td>
                 </tr>

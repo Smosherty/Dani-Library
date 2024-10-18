@@ -6,7 +6,7 @@ use App\Http\Controllers\LibraryController;
 
 
 Route::get('/', function () {
-    return view('layout');
+    return view('welcome');
 });
 
 
